@@ -1,0 +1,321 @@
+/* sab elements ka spacing rest kiya h*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////*/
+/* body center align */
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  background: rgba(245, 211, 77, 0.885);
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////*/
+/* main registration box */
+.container {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  padding: 30px;
+  margin: 0 15px;
+
+  border-radius: 20px;
+  background-color: #ffffff2b;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////*/
+/* page heading */
+.container header {
+  text-align: center;
+ 
+  font-size: 32px;
+  font-weight: 600;
+  color: #333;
+  position: relative;
+
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////*/
+/* heading bottom red line */
+.container header::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  height: 3px;
+  width: 440px;
+  border-radius: 5px;
+  background-color: red;
+
+
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////*/
+/* form top space */
+.details {
+  margin-top: 30px;
+}
+
+
+
+/* form outer background */
+form {
+  background-color: #ffffff53;
+  margin-top: 20px;
+  min-height: 490px;
+  padding: 10px;
+  border-radius: 20px;
+
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////*/
+/* form title */
+.title {
+
+  display: block;
+  margin-bottom: 17px;
+  font-size: 28px;
+  font-weight: 500;
+  color: #333;
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////*/
+/* fields grid */
+.fields {
+  display: flex;
+
+
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////*/
+/* input box */
+.input-sk {
+  display: flex;
+
+
+  width: calc(100% /3 -15px);
+  flex-direction: column;
+
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////*/
+/* input field style */
+.input-sk input {
+
+
+  outline: none;
+  font-weight: 400;
+  color: #333;
+  border: 1px solid #aaaaaa9e;
+  padding: 0 20px;
+  border-radius: 10px;
+
+  font-size: 14px;
+  height: 35px;
+
+  margin: 8px 0;
+  background-color: rgba(249, 248, 244, 0.215);
+
+
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////*/
+/* select dropdown */
+.input-sk select {
+
+
+  outline: none;
+  font-weight: 400;
+  color: #333;
+  background-color: rgba(249, 248, 244, 0.215);
+
+  border: 1px solid #aaaa;
+  padding: 0 60px;
+  border-radius: 10px;
+  font-size: 14px;
+
+  height: 35px;
+  margin: 8px 0;
+
+
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////*/
+/* register button */
+.input-sk button {
+  outline: none;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: rgb(235, 23, 23);
+
+  border: 1px solid #aaaa;
+  border-radius: 20px;
+  font-size: 14px;
+  height: 35px;
+
+  margin: 40px 0;
+  width: 200px;
+  position: relative;
+  left: 35%;
+
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////*/
+/* button hover */
+.input-sk button:hover {
+
+  background-color: #f34e6c;
+  transform: scale(1.10);
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////*/
+/* input focus effect */
+.input-sk input:is(:focus, :valid) {
+
+  box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////*/
+/* date input */
+.input-sk input[type="date"] {
+
+  color:#707070;
+
+}
+.input-sk input[type="date"]:valid {
+
+  color:#333;
+
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////*/
+/*   Students Container  */
+.students-container {
+
+  margin-top: 40px;
+  background-color: #ffffff2b;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+  /* scroll bar  */
+  max-height: 420px; 
+  overflow-y: auto;  
+
+
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Heading + count row */
+.students-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////*/
+/* search box */
+.search-box {
+
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #aaa;
+  margin: 20px 0;
+  font-size: 14px;
+  outline: none;
+
+}
+.search-box:focus {
+
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////*/
+/* table */
+table {
+
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////*/
+/* table cell */
+table th, table td {
+
+  border: 1px solid #aaa;
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.45);
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////*/
+/* table header */
+table th {
+  background-color: rgba(235, 195, 50, 0.606);
+  font-weight: 600;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////*/
+/* table action button */
+table button {
+
+  background-color: rgb(235, 23, 23);
+  color: white;
+  border: none;
+  padding: 7px 15px;
+
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////*/
+/* hover effect */
+table button:hover {
+  background-color: #f34e6c;
+  transform: scale(1.10);
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////*/
+/* responsive */
+@media (max-width:640px) {
+  .students-header h2 {
+    font-size: 22px;
+  }
+  .stats {
+    font-size: 15px;
+  }
+}
+/*                                       css complete hogye.        
+
+
+
+
+
+
+                                              *   SANI *
